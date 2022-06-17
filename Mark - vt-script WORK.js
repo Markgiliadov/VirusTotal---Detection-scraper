@@ -46,7 +46,7 @@ for (let i = 0; i < keys.length; i++) {
 //Test if new detections on virustotal!
 const newDetectionsDict = {};
  for ( [key, value] of Object.entries(detectionsDict)){
-     newDetectionsDict[key.trim().toLowerCase()] = value.trim().toLowerCase()
+     newDetectionsDict[key.trim().toLowerCase()] = value.trim()
 }
 const oldDetectionsDict = {}
 const numOfDetections = Object.keys(detectionsDict).length;
